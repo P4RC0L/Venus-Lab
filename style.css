@@ -1,0 +1,109 @@
+
+/*<link rel="stylesheet" href="style.css"> General Reset: Removes default browser spacing so we start from zero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't break the layout width */
+    font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #000000; /* Deep tech-black for a premium feel */
+    color: #e0e0e0; /* Light grey text for better readability on dark backgrounds */
+    line-height: 1.6; /* Adds breathing room between lines of text */
+}
+
+/* Header & Navigation */
+header {
+    background: rgba(0, 0, 0, 0.9); /* Slightly transparent dark grey */
+    padding: 1rem 5%; /* Top/bottom 1rem, Left/right 5% of screen */
+    position: fixed; /* Stays at the top even when you scroll */
+    width: 100%;
+    border-bottom: 1px solid #505050; /* Subtle line to separate header from body */
+}
+
+nav {
+    display: flex; /* Aligns logo and menu horizontally */
+    justify-content: space-between; /* Pushes logo to the left and menu to the right */
+    align-items: center; /* Centers items vertically */
+}
+
+nav ul {
+    display: flex; /* Makes the list items stay in a row instead of a column */
+    list-style: none; /* Removes the bullet points */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between the menu links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes the default underline from links */
+    color: #bbb;
+    transition: 0.3s; /* Smooth color change when hovering */
+}
+
+nav ul li a:hover {
+    color: #8d8d8d; /* Changes color to tech-teal when mouse is over it */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh; /* Takes up 100% of the screen height */
+    display: flex;
+    flex-direction: column; /* Stacks text and button vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center;
+    padding: 0 20px;
+}
+.process_main {
+    height: auto; 
+    text-align: center;
+}
+.services_main {
+    height: auto;
+    text-align: center;
+
+}
+.Manual_main {
+    height: auto;
+    text-align: center;
+
+}
+.services_main {
+    height: auto;
+    text-align: center;
+
+}
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    /* This creates a gradient effect on the text itself */
+    background: linear-gradient(90deg, #333333, #88898a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+    margin-top: 2rem;
+    padding: 12px 30px;
+    background: transparent; /* "Ghost button" style */
+    border: 2px solid #646867;
+    color: #777777;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.cta-button:hover {
+    background: #646464; /* Fills the button with color on hover */
+    color: #000; /* Makes text black for contrast */
+}
+.logo {
+    height: 60px; /* Adjust this to fit your header nicely */
+    width: auto;
+    max-width: 100%; /* Prevents the image from being wider than the screen */   /* Keeps the proportions perfect (no stretching) */
+    margin-top: 10px;
+    display: block;
+}
